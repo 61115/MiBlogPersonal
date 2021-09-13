@@ -1,65 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="css/materialize.min.css"
+      media="screen,projection"
+    />
+
+    <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BLOG DE BRIAN</title>
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    
+     <!--Para que acepte acento y ñ-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
   </head>
+  <style>
+    body{
+Background-color: #454545;
+}
+  footer {
+  width: 102.5%;
+  background: #202020;
+  color: white;
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}</style>
+
   <body>
-    <h1>BLOG DE BRIAN ENRIQUE SIERRA TZEC</h1>
-    <h3>Edad: 21</h3>
-    <h3>Estudiante</h3>
-    <h3>Carrera</h3>
-    <h3>Vivo en Santa Ana</h3>
-    <h3>Mi familia: 1 hermana</h3>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper red darken-4">
+          <a href="#" class="brand-logo right">Blog Personal</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Datos Personales</a></li>
+            <li><a href="#">Gustos</a></li>
+            <li><a href="#">Personalidad</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-    <h1>Metas y motivación</h1>
-    <h2>
-      Quiero terminar mi carrera y poder trabajar en un campo de mi agrado
-      referente a lo que estudie.
-    </h2>
-    <h2>Lo que mas me motiva es mi familia.</h2>
-    <h2>Me detiene mi personalidad.</h2>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m6 offset-m4">
+          <form action="index.html" method="get">
+            <div class="row card-panel z-depth-4">
+              <h5>Iniciar Sesion</h>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">person</i>
+                <input
+                  type="text"
+                  placeholder="Ingresa tu id o usuario"
+                  id="usuario"
+                  name="usuario"
+                  class="validate"
+                  required
+                />
+              </div>
 
-    <h1>Un día en mi vida</h1>
-    <h2>Mi dia existoso es realizar todos mis pendientes.</h2>
-    <h2>
-      Me levanto para mis clases y hablar con mi maestros y compañeros, despues
-      interactuo con mis padres, hermana y sobrinas
-    </h2>
-    <h2>Me motiva cumplir lo que me propongo.</h2>
-    <h2>
-      Me frustra sentir que no hice lo mejor que pude o no cumplir mis
-      objetivos.
-    </h2>
-    <h1>Personalidad</h1>
-    <p>
-      Maduro
-      <input type="range" min="1" max="10" />
-      Joven
-    </p>
+              <div class="input-field col s12">
+                <i class="material-icons prefix">fingerprint</i>
+                <input
+                  type="password"
+                  placeholder="Ingresa tu contraseña"
+                  id="pswd"
+                  name="pswd"
+                  class="validate"
+                  required
+                />
+              </div>
+              <button class="btn blue right">
+                <i class="material-icons left">login</i>
+                Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-    <p>
-      Elite
-      <input type="range" min="1" max="10" />
-      Atractivo para las masas
-    </p>
+      <div class="row">
+        <div class="col s6">
+          <div class="card lighten-3">
+            <div class="card-content">
+              <p>
+                <div class="datos"> 
+                  <h4>Datos personales</h4>
+                  <h5>Edad: 21</h5>
+                  <h5>Ocupacion:Estudiante</h5>
+                  <h5>Grado: Carrera</h5>
+                  <h5>Vivo en La huerta,Santa Ana</h5>
+                  <h5>Mi familia: 1 hermana</h5>
+                  <!--Creación de hipervinculos-->
+                  <h4>Redes sociales</h4>
+                  <h5>
+                  <a color: "#00073C" >Facebook:</a>  
+                  <a href="https://www.facebook.com/briian.enriiqee">Brian Sierra</a><p>
+                  <a>Mi Universidad:</a>
+                  <a href="https://www.uacam.mx">UACAM</a><p> 
+                  </h5>
+              
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <p>
-      Serio
-      <input type="range" min="1" max="10" />
-      Jugueton
-    </p>
-    <p>
-      Convencional
-      <input type="range" min="1" max="10" />
-      Rebelde
-    </p>
-    <p>
-      Amigable
-      <input type="range" min="1" max="10" />
-      Autoritario
-    </p>
+      
+      </div>
+
+      <div class="row">
+        <div class="col s6">
+          <div class="card darken-1">
+            <div class="card-image">
+              <img src="images/Universidad.jpg" alt="" />
+            </div>
+            <div class="card-title">
+              Mi Universidad
+            </div>
+            <div class="card-content">
+              <h4>Universidad Autonoma de Campeche</h4>
+              <p>
+                  En esta institución los jóvenes son el centro de nuestro quehacer, la razón de existir de la Universidad; la cual, mira hacia el futuro, tiene clara sus responsabilidades y sobre todo, tiene el talento y las personas para que los grandes fines se vuelvan compromisos sociales.
+
+                  Para nuestra Alma Máter, la enseñanza de calidad es una prioridad, por ello procuramos impartir una educación integral que permita generar conocimientos a través de la investigación, la conservación de nuestras tradiciones, la innovación tecnológica y la difusión de las distintas expresiones culturales y deportivas.
+                  
+                  Compañeros Universitarios, en el marco de los principios y valores que permitan construir un Campeche y un México mejor, les invito a mantener un espíritu de cooperación, unión y fraternidad, que haga posible la excelencia de ésta Máxima Casa de Estudios.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col s9">
+          <div class="card">
+            <div class="card-images">
+              <img src="images/Diadelosmuertos.jpg" alt="" />
+            </div>
+            <div class="card-title">
+              1 de septiembre
+            </div>
+            <div class="card-content">
+              <h3>Dia de los muertos</h3>
+              <p>
+                La celebración del Día de Muertos tiene raíces prehispánicas y festeja la memoria de los difuntos con visitas a cementerios y coloridas ofrendas.
+               </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <footer>
+        <strong>© 2021 Programación de Aplicaciones Web</strong>
+        <br>      
+        <a>Alumno: Brian Enrique Sierra Tzec</a> | <a href="">al061115@uacam.mx</a> 
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
